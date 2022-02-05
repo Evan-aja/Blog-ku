@@ -98,15 +98,8 @@ options edns0 single-request-reopen
 
 **Referensi**
 
-- README.openSUSE, openSUSE,
-   diakses pada (2021-08-16) dari
-   /usr/share/doc/packages/dnscrypt-proxy/README.openSUSE
+- README.openSUSE, openSUSE, diakses pada (2021-08-16) dari usr/share/doc/packages/dnscrypt-proxy/README.openSUSE
 
-- build.opensuse.org,
-   dnscrypt-proxy, A tool for securing communications between a client
-   and a DNS resolver, diakses pada (2021-08-17) dari
-   https://build.opensuse.org/package/show/openSUSE%3AFactory/dnscrypt-proxy
+- build.opensuse.org, dnscrypt-proxy, A tool for securing communications between a client and a DNS resolver, diakses pada (2021-08-17) dari https://build.opensuse.org/package/show/openSUSE%3AFactory/dnscrypt-proxy
 
-- github.com, Installation
-   Linux, diakses pada (2021-08-16) dari
-   [Installation linux · DNSCrypt/dnscrypt-proxy Wiki · GitHub](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Installation-linux)
+- github.com, Installation Linux, diakses pada (2021-08-16) dari Installation linux · DNSCrypt/dnscrypt-proxy Wiki · GitHub](https://github.com/DNSCrypt/dnscrypt-proxy/wiki/Installation-linux)
