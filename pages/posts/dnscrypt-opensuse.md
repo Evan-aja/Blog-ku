@@ -81,7 +81,7 @@ options edns0 single-request-reopen
 
 7. Setelah file tersalin, waktunya mengubah konten dari dnscrypt-proxy.socket.conf didalam folder yang dibuat seperti gambar dibawah ini
    
-   <img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic5.png" title="Sebelum" alt="socket" data-align="center"><img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic6.png" title="Sesudah" alt="socket" data-align="center"/>Diperlukan dnscrypt-proxy.socket ini, karena dnscrypt-proxy.service tidak bisa mendengar koneksi di bawah port 1000 tanpanya.
+   <img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic5.png" title="Sebelum" alt="socket" data-align="center"/><img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic6.png" title="Sesudah" alt="socket" data-align="center"/>Diperlukan dnscrypt-proxy.socket ini, karena dnscrypt-proxy.service tidak bisa mendengar koneksi di bawah port 1000 tanpanya.
 
 8. langkah terakhir adalah mengaktifkan *socket* dan *service* dari *dnscrypt-proxy*,
    serta melakukan **restart** pada **NetworkManager.service** dengan perintah berikut 
