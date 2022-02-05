@@ -42,7 +42,7 @@ $ = run as user
 
 <img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic2.png" title="Penggunaan server doh Cloudflare dan Adguard" alt="resolv.conf" data-align="center"/>
 
-3. langkah selanjutnya adalah memberi opsi **rc-manager=file** dan **dns=none** pada **NetworkManager.conf** dibawah **[main]**. Pengeditan dapat dilakukan dengan perintah 
+3. Langkah selanjutnya adalah memberi opsi **rc-manager=file** dan **dns=none** pada **NetworkManager.conf** dibawah **[main]**. Pengeditan dapat dilakukan dengan perintah 
    
    ```c
    # nano /etc/NetworkManager/NetworkManager.conf
@@ -83,7 +83,7 @@ options edns0 single-request-reopen
    
    <img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic5.png" title="Sebelum" alt="socket" data-align="center"/><img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic6.png" title="Sesudah" alt="socket" data-align="center"/>Diperlukan dnscrypt-proxy.socket ini, karena dnscrypt-proxy.service tidak bisa mendengar koneksi di bawah port 1000 tanpanya.
 
-8. langkah terakhir adalah mengaktifkan *socket* dan *service* dari *dnscrypt-proxy*,
+8. Langkah terakhir adalah mengaktifkan *socket* dan *service* dari *dnscrypt-proxy*,
    serta melakukan **restart** pada **NetworkManager.service** dengan perintah berikut 
    
    ```c
@@ -94,7 +94,7 @@ options edns0 single-request-reopen
    
    pengaktifan tersebut harus urut dari atas kebawah, apabila tidak, maka **dnscypt-proxy.socket** akan gagal berjalan karena *socket* tersebut harus berjalan sebelum **dnscrypt-proxy.service**.
 
-9. (opsional) apabila merasa diperlukan, dapat dilakukan **reboot** terhadap sistem untuk memulai ulang semua program yang berjalan sebelum **dnscrypt-proxy** dimulai.
+9. Apabila merasa diperlukan, dapat dilakukan **reboot** terhadap sistem untuk memulai ulang semua program yang berjalan sebelum **dnscrypt-proxy** dimulai. (opsional)
 
 **Referensi**
 
