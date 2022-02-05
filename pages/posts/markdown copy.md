@@ -10,7 +10,7 @@ author: Gabriel Evan
 
 ----
 
-![openSUSE](/resource/Cara\%20Mudah\%20Setup\%20dnscrypt-proxy\%20di\%20openSUSE/pic1.png)
+<img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic1.png" title="Logo openSUSE" alt="openSUSE" data-align="center">
 
 OpenSUSE, sebuah distro linux yang didukung oleh SUSE Linux dan dibuat dengan tujuan untuk memberikan sistem operasi berkelas enterprise secara gratis kepada komunitas open source. Di dalam tutorial ini aka dijelaskan bagaimana cara untuk mengkonfigurasi dnscrypt-proxy agar dapat berjalan dengan lancar di openSUSE Tumbleweed (dan Leap) dan mendengar koneksi pada port 53.
 
@@ -31,32 +31,43 @@ $ = run as user
 
 2. Setelah dnscrypt-proxy terpasang, dapat dilakukan pengeditan terhadap
    file dnscrypt-proxy.toml untuk memasukkan server dns yang ingin
-   digunakan dan pengaturan lain yang dibutuhkan (seperti *disable
-   ipv6)* dengan perintah
+   digunakan dan pengaturan lain yang dibutuhkan (seperti **disable
+   ipv6**) dengan perintah 
+   
+   ```c
+   # nano/etc/dnscrypt-proxy/dnscrypt-proxy.toml
+   ```
+   
+   berikut contoh **server_name** yang dapat digunakan. Untuk listen_addresses lebih baik dikosongkan karena konfigurasi akan dilakukan pada file lain.
 
-```c
-# nano/etc/dnscrypt-proxy/dnscrypt-proxy.toml
+![resolv.conf](https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic2.png "Penggunaan server doh Cloudflare dan Adguard")
+
+3. langkah selanjutnya adalah memberi opsi **rc-manager=file** dan **dns=none** pada **NetworkManager.conf** dibawah **[main]**. Pengeditan dapat dilakukan dengan perintah 
+   
+   ```c
+   # nano /etc/NetworkManager/NetworkManager.conf
+   ```
+   
+   **rc-manager=file** akan mencegah netconfig merubah isi dari **/etc/resolv.conf** dan **dns=none** akan mencegah NetworkManager mengubah isi dari **/etc/resolv.conf**. Sehingga tidak akan terjadi overwrite konten didalam resolv.conf.
+
+![NetworkManager.conf](https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic3.png "Hasil edit NetworkManager.conf")
+
+4. Sebelum melakukan perubahan terhadap **/etc/resolv.conf**, sebaiknya untuk membuat cadangan dari file tersebut, sehingga apabila setelah perubahan data dilakukan terdapat kerusakan, restorasi data dalat dilakukan dengan mudah. Cadangan dapat dibuat dengan perintah 
+   
+   ```c
+   # cp /etc/resolv.conf /etc/resolv.conf.bak && rm /etc/resolv.conf && nano /etc/resolv.conf
+   ```
+   
+   berikut beberapa *line* yang harus diisikan kedalam **resolv.conf** (dan tambahan opsional) :
+
+```ada
+nameserver 127.0.0.1
+options edns0 single-request-reopen
 ```
 
-        berikut contoh *server_name* yang dapat digunakan. Untuk listen_addresses lebih baik dikosongkan karena konfigurasi akan dilakukan pada file lain.
+![resolv.conf](https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic4.png "Beberapa tambahan opsional")
 
-3. langkah selanjutnya adalah memberi opsi *rc-manager=file* dan *dns=none* pada NetworkManager.conf dibawah *[main]*. Pengeditan dapat dilakukan dengan perintah
-
-```c
-# nano /etc/NetworkManager/NetworkManager.conf
-```
-
-        *rc-manager=file* akan mencegah netconfig merubah isi dari */etc/**resolv.conf* dan *dns=none* akan mencegah NetworkManager mengubah isi dari */etc/**resolv.conf*. Sehingga tidak akan terjadi overwrite konten didalam resolv.conf.
-
-4. Sebelum melakukan perubahan terhadap /etc/*resolv.conf*, sebaiknya untuk membuat cadangan dari file tersebut, sehingga apabila setelah perubahan data dilakukan terdapat kerusakan, restorasi data dalat dilakukan dengan mudah. Cadangan dapat dibuat dengan perintah
-
-```c
-# cp /etc/resolv.conf /etc/resolv.conf.bak && rm /etc/resolv.conf && nano /etc/resolv.conf
-```
-
-berikut beberapa line yang harus diisikan kedalam *resolv.conf*
-
-5. Kemudian, buat direktori didalam */etc/systemd/system/* dengan nama *dnscrypt-proxy.socket.d* dengan perintah
+5. Kemudian, buat direktori didalam **/etc/systemd/system/** dengan nama **dnscrypt-proxy.socket.d** dengan perintah
 
 ```c
 # mkdir /etc/systemd/system/dnscrypt-proxy.socket.d
@@ -69,19 +80,21 @@ berikut beberapa line yang harus diisikan kedalam *resolv.conf*
 ```
 
 7. Setelah file tersalin, waktunya mengubah konten dari dnscrypt-proxy.socket.conf didalam folder yang dibuat seperti gambar dibawah ini
+   
+   ![socket](https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic5.png "Sebelum")![socket](https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic6.png "Sesudah")Diperlukan dnscrypt-proxy.socket ini, karena dnscrypt-proxy.service tidak bisa mendengar koneksi di bawah port 1000 tanpanya.
 
 8. langkah terakhir adalah mengaktifkan *socket* dan *service* dari *dnscrypt-proxy*,
-   serta melakukan *restart* pada *NetworkManager.service* dengan perintah berikut
+   serta melakukan **restart** pada **NetworkManager.service** dengan perintah berikut 
+   
+   ```c
+   # systemctl enable --now dnscrypt-proxy.socket
+   # systemctl enable --now dnscrypt-proxy.service
+   # systemctl restart NetworkManager.service
+   ```
+   
+   pengaktifan tersebut harus urut dari atas kebawah, apabila tidak, maka **dnscypt-proxy.socket** akan gagal berjalan karena *socket* tersebut harus berjalan sebelum **dnscrypt-proxy.service**.
 
-```c
-# systemctl enable --now dnscrypt-proxy.socket
-# systemctl enable --now dnscrypt-proxy.service
-# systemctl restart NetworkManager.service
-```
-
-        pengaktifan tersebut harus urut dari atas kebawah, apabila tidak, maka *dnscypt-proxy.socket* akan gagal berjalan karena *socket* tersebut harus berjalan sebelum *dnscrypt-proxy.service*.
-
-9. (opsional) apabila merasa diperlukan, dapat dilakukan *reboot* terhadap sistem untuk memulai ulang semua program yang berjalan sebelum *dnscrypt-proxy* dimulai.
+9. (opsional) apabila merasa diperlukan, dapat dilakukan **reboot** terhadap sistem untuk memulai ulang semua program yang berjalan sebelum **dnscrypt-proxy** dimulai.
 
 **Referensi**
 
