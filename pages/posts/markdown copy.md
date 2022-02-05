@@ -40,7 +40,7 @@ $ = run as user
    
    berikut contoh **server_name** yang dapat digunakan. Untuk listen_addresses lebih baik dikosongkan karena konfigurasi akan dilakukan pada file lain.
 
-![resolv.conf](https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic2.png "Penggunaan server doh Cloudflare dan Adguard")
+<img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic2.png" title="Penggunaan server doh Cloudflare dan Adguard" alt="resolv.conf" data-align="center">
 
 3. langkah selanjutnya adalah memberi opsi **rc-manager=file** dan **dns=none** pada **NetworkManager.conf** dibawah **[main]**. Pengeditan dapat dilakukan dengan perintah 
    
@@ -50,7 +50,7 @@ $ = run as user
    
    **rc-manager=file** akan mencegah netconfig merubah isi dari **/etc/resolv.conf** dan **dns=none** akan mencegah NetworkManager mengubah isi dari **/etc/resolv.conf**. Sehingga tidak akan terjadi overwrite konten didalam resolv.conf.
 
-![NetworkManager.conf](https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic3.png "Hasil edit NetworkManager.conf")
+<img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic3.png" title="Hasil edit NetworkManager.conf" alt="NetworkManager.conf" data-align="center">
 
 4. Sebelum melakukan perubahan terhadap **/etc/resolv.conf**, sebaiknya untuk membuat cadangan dari file tersebut, sehingga apabila setelah perubahan data dilakukan terdapat kerusakan, restorasi data dalat dilakukan dengan mudah. Cadangan dapat dibuat dengan perintah 
    
@@ -65,7 +65,7 @@ nameserver 127.0.0.1
 options edns0 single-request-reopen
 ```
 
-![resolv.conf](https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic4.png "Beberapa tambahan opsional")
+<img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic4.png" title="Beberapa tambahan opsional" alt="resolv.conf" data-align="center">
 
 5. Kemudian, buat direktori didalam **/etc/systemd/system/** dengan nama **dnscrypt-proxy.socket.d** dengan perintah
 
@@ -81,7 +81,7 @@ options edns0 single-request-reopen
 
 7. Setelah file tersalin, waktunya mengubah konten dari dnscrypt-proxy.socket.conf didalam folder yang dibuat seperti gambar dibawah ini
    
-   ![socket](https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic5.png "Sebelum")![socket](https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic6.png "Sesudah")Diperlukan dnscrypt-proxy.socket ini, karena dnscrypt-proxy.service tidak bisa mendengar koneksi di bawah port 1000 tanpanya.
+   <img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic5.png" title="Sebelum" alt="socket" data-align="center"><img src="https://github.com/Evan-aja/Blog-ku/raw/main/resource/Cara%20Mudah%20Setup%20dnscrypt-proxy%20di%20openSUSE/pic6.png" title="Sesudah" alt="socket" data-align="center">Diperlukan dnscrypt-proxy.socket ini, karena dnscrypt-proxy.service tidak bisa mendengar koneksi di bawah port 1000 tanpanya.
 
 8. langkah terakhir adalah mengaktifkan *socket* dan *service* dari *dnscrypt-proxy*,
    serta melakukan **restart** pada **NetworkManager.service** dengan perintah berikut 
