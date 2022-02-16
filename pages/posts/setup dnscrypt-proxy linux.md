@@ -8,7 +8,7 @@ author: Gabriel Evan
 
 # DNS over HTTPS Menggunakan dnscrypt-proxy di Linux
 
-![](https://cdn-images-1.medium.com/max/800/0*dMFOLh448rLLzcPr.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/DNS%20over%20HTTPS%20Menggunakan%20dnscrypt-proxy%20di%C2%A0Linux/pic1.png" title="" alt="" data-align="center"/>
 
 ## **Apa itu DoH?**
 
@@ -61,7 +61,7 @@ Uncomment *“server_names = [‘nama’, ’server’, ’default’]”* dan b
 
 Ketika memberikan nama *server*, disarankan untuk tidak menggunakan *server* yang berbeda di saat yang sama, karena *dnscrypt-proxy* hanya akan menggunakan salah satu *server* saja. Sehingga lebih baik disimpan dalam bentuk komentar dan bisa dengan mudah berganti *server* dengan *copy and paste.*
 
-![](https://cdn-images-1.medium.com/max/800/1*BG8P6dRHckoBtuKDyT6l4Q.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/DNS%20over%20HTTPS%20Menggunakan%20dnscrypt-proxy%20di%C2%A0Linux/pic2.png" title="" alt="" data-align="center"/>
 
 <p align="center">Contoh Multiple Server</p>
 
@@ -71,11 +71,11 @@ Selanjutnya, lakukan cek apakah dnscrypt-proxy bekerja dengan normal dengan peri
 
 perintah di atas akan menampilkan output:
 
-![](https://cdn-images-1.medium.com/max/800/1*t6R1MjUG3gFukNenQeOPTg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/DNS%20over%20HTTPS%20Menggunakan%20dnscrypt-proxy%20di%C2%A0Linux/pic3.png" title="" alt="" data-align="center"/>
 
 Apabila output yang dikeluarkan adalah error seperti berikut:
 
-![](https://cdn-images-1.medium.com/max/800/1*L16EYyyFXlBdyqR0r9msoQ.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/DNS%20over%20HTTPS%20Menggunakan%20dnscrypt-proxy%20di%C2%A0Linux/pic4.png" title="" alt="" data-align="center"/>
 
 tidak perlu khawatir, karena *dnscrypt-proxy* akan bekerja dengan normal nantinya, perintah ini tidak menjadi indikator apakah *dnscrypt-proxy* dapat bekerja dengan normal di dalam distro yang digunakan.
 
@@ -89,7 +89,7 @@ Setelah *cadangan* dibuat, maka sekarang edit konten *resolv.conf.*
 
 Apabila terdapat konten di dalam *resolv.conf* seperti berikut:
 
-![](https://cdn-images-1.medium.com/max/800/1*YLAArdyyOLjpfnlnWkcmkA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/DNS%20over%20HTTPS%20Menggunakan%20dnscrypt-proxy%20di%C2%A0Linux/pic5.png" title="" alt="" data-align="center"/>
 
 hapus semua *line* yang ada, lalu ganti dengan *line* berikut:
 
@@ -104,7 +104,7 @@ Simpan dan tutup. Lalu, edit *file NetworkManager/NetworkManager.conf* didalam *
 
 tambahkan dns=none di bawah [main]
 
-![](https://cdn-images-1.medium.com/max/800/1*wH3zViWM2eoVkoQV1DCHPQ.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/DNS%20over%20HTTPS%20Menggunakan%20dnscrypt-proxy%20di%C2%A0Linux/pic6.png" title="" alt="" data-align="center"/>
 
 Simpan dan tutup. Sebelum melakukan *restart* pada *NetworkManager.service*, perlu diketahui bahwa *resolv.conf* merupakan *file* yang dibuat secara otomatis oleh *NetworkManager* [*service*](https://en.wikipedia.org/wiki/Daemon_%28computing%29)*.* Sehingga setiap perubahan akan otomatis dihapus pada setiap *system/service* *restart*. Kemudian perlu dilakukan perubahan terhadap *file resolv.conf* untuk menjadikan *file* tersebut menjadi [*immutable*](https://en.wikipedia.org/wiki/Chattr)*.* Perubahan dapat dilakukan dengan perintah:
 
