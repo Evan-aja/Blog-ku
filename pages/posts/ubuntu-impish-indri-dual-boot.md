@@ -8,7 +8,7 @@ author: Gabriel Evan
 
 # Instalasi Ubuntu 21.10 Impish Indri Dual Boot dengan Windows
 
-![](https://miro.medium.com/max/700/1*BX0L58CVAjN5RTVKUbowlA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic1.png" title="" alt="" data-align="center"/>
 
 <p align="center">Ubuntu</p>
 
@@ -20,231 +20,231 @@ Ubuntu. Sebuah distribusi Linux yang sangat populer di kalangan pemula. Untuk me
 
 1. Unduh ISO Ubuntu dari [link ini](http://ubuntu.com/download/desktop). Di halaman tersebut akan disediakan 2 pilihan, yaitu 20.04 LTS yang dibuat sebagai versi *Long Term Support* dan didukung selama 5 tahun dari Ubuntu, serta 21.10 yang didukung hingga Juli 2022. Kita akan mengunduh versi 21.10 Impish Indri.
 
-![](https://miro.medium.com/max/700/1*rv2RGHu2hYB5CRqLMlZGGQ.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic2.png" title="" alt="" data-align="center"/>
 
-Halaman Unduhan Ubuntu
+<p align="center">Halaman Unduhan Ubuntu</p>
 
 2. Tunggu hingga unduhan selesai.
 
-![](https://miro.medium.com/max/700/1*Qxq5ynHpN1IP6DUDSGYtyQ.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic3.png" title="" alt="" data-align="center"/>
 
 3. Setelah unduhan selesai, kita akan mengunduh Etcher melalui [link ini](https://www.balena.io/etcher/), sebuah *software* yang digunakan untuk membuat *bootable* USB sehingga kita dapat masuk ke dalam Ubuntu Live CD. Kita akan mengunduh versi *portable* dari Etcher.
 
-![](https://miro.medium.com/max/700/1*MCV2hIr7CQCRGPVgrl0Cng.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic4.png" title="" alt="" data-align="center"/>
 
-Halaman Unduhan Etcher
+<p align="center">Halaman Unduhan Etcher</p>
 
 4. Setelah Etcher terunduh, buka Etcher, lalu klik “Flash from file”, dan pilih ISO dari Ubuntu 21.10 yang baru saja diunduh.
 
-![](https://miro.medium.com/max/700/1*VzE2T2MgNymPGMNhiBmIVA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic5.png" title="" alt="" data-align="center"/>
 
-Pengambilan file ISO
+<p align="center">Pengambilan file ISO</p>
 
 5. Pada langkah ini, pilih *target device* yang diinginkan, masukkan *flashdisk* yang akan digunakan sebagai *Bootable* USB.
 
-![](https://miro.medium.com/max/700/1*_L6l2-j_tpJv8i_P60I4Kg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic6.png" title="" alt="" data-align="center"/>
 
 6. Sebelum memilih *flashdisk* yang akan digunakan, *backup* terlebih dahulu data yang kalian miliki, karena data tersebut akan dihapus oleh Etcher. Dan jangan salah memilih *device.* Etcher akan mengingatkan *drive* mana yang aman untuk dipilih dan digunakan sebagai *Bootable* USB.
 
-![](https://miro.medium.com/max/700/1*18fQCtgV_S3DalNCGbJahw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic7.png" title="" alt="" data-align="center"/>
 
-Pemilihan USB thumb drive
+<p align="center">Pemilihan USB thumb drive</p>
 
 7. Setelah memilih *flashdisk*, klik “Flash!”, dan sekarang kita hanya tinggal menunggu hingga proses selesai.
 
-![](https://miro.medium.com/max/700/1*3Dn7qcpJi0rqojxYj-F6Qw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic8.png" title="" alt="" data-align="center"/>
 
-![](https://miro.medium.com/max/700/1*SzQBWXIHoGLdQRxYR4S3_A.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic9.png" title="" alt="" data-align="center"/>
 
-Proses flashing
+<p align="center">Proses flashing</p>
 
 8. Ketika Balena Etcher selesai *Flashing*, cabut *flashdisk* dari komputer sebelum masuk ke langkah selanjutnya.
 
 9. Buka File Explorer, lalu klik kanan pada “This PC”, dan pilih “Manage” pada menu konteks.
 
-![](https://miro.medium.com/max/450/1*cZvBW-2Ypb3jTVsUyoO87g.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic10.png" title="" alt="" data-align="center"/>
 
-Menu konteks This PC
+<p align="center">Menu konteks This PC</p>
 
 10. Ketika halaman Computer Management telah terbuka, klik “Disk Management” di dalam *ribbon Storage*, tunggu hingga seluruh *Disk* dan Volume tampil.
 
-![](https://miro.medium.com/max/700/1*uJ0uNlUO5AlX5im7eM2Afw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic11.png" title="" alt="" data-align="center"/>
 
-Menu Disk Management
+<p align="center">Menu Disk Management</p>
 
 11. Pilih Volume yang ingin dipotong, kita bisa memotong *(Shrink Volume)* Volume Windows (Local Disk C:) atau *disk* lain. Di dalam contoh ini, saya akan memakai Volume lain.
 
-![](https://miro.medium.com/max/558/1*2GZjwdaSu3JJhIbfQqnbxQ.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic12.png" title="" alt="" data-align="center"/>
 
-Menu Konteks Disk Management
+<p align="center">Menu Konteks Disk Management</p>
 
-![](https://miro.medium.com/max/444/1*T9wayGTwziZfc9f9n6oIOw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic13.png" title="" alt="" data-align="center"/>
 
-Volume akan dipotong
+<p align="center">Volume akan dipotong</p>
 
 12. Potong sesuai ukuran yang diinginkan, Linux tidak memperlukan partisi sebesar Windows, jadi 50 GB adalah ukuran minimum yang saya anjurkan, Ubuntu bisa berjalan dengan 15GB, tetapi 50GB memberikan wilayah penyimpanan tambahan untuk data tambahan seperti *games*, ide, dan sebagainya.
 
-![](https://miro.medium.com/max/483/1*MJl8_qHIDSml0Ax53iYuig.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic14.png" title="" alt="" data-align="center"/>
 
-Ukuran yang volume diinginkan
+<p align="center">Ukuran yang volume diinginkan</p>
 
-![](https://miro.medium.com/max/294/1*mfD-3-hHkafGuqSqc6_4ig.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic15.png" title="" alt="" data-align="center"/>
 
-Hasil pemotongan
+<p align="center">Hasil pemotongan</p>
 
 13. Tutup semua program, masukkan kembali *flashdisk*, lalu *restart* Komputer.
 
 Pada saat logo dari *motherboard*/komputer muncul (sebelum logo windows), klik tombol Boot menu dari komputer yang dimiliki (untuk tombol bisa dilihat [disini](https://www.boot-disk.com/quest_bootmenu.htm), pada kolom “Boot Menu”). Lalu, pilih *flashdisk live* CD yang telah dibuat.
 
-![](https://miro.medium.com/max/642/1*hKiJQG3b3MrlbeuZzsCUdA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic16.png" title="" alt="" data-align="center"/>
 
-Boot Option
+<p align="center">Boot Option</p>
 
 14. Pilih Ubuntu dari menu GRUB.
 
-![](https://miro.medium.com/max/642/1*6z79XdCXU-LR7aA_6GtGtg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic17.png" title="" alt="" data-align="center"/>
 
-GRUB Menu LiveCD Ubuntu
+<p align="center">GRUB Menu LiveCD Ubuntu</p>
 
 15. Kita telah masuk ke dalam halaman pertama dari instalasi Ubuntu, pilih “Try Ubuntu”.
 
-![](https://miro.medium.com/max/700/1*RDeJ58azS8yzcaE7FJotaQ.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic18.png" title="" alt="" data-align="center"/>
 
-Start Page
+<p align="center">Start Page</p>
 
 16. Tes semua *hardware* yang dimiliki sebelum melakukan instalasi, agar kita tahu apakah semua *hardware* yang ada di dalam komputer dapat berjalan dengan semestinya.
 
-![](https://miro.medium.com/max/700/1*xScfriHurFJsmpP8yxb9Mw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic19.png" title="" alt="" data-align="center"/>
 
-Tes hardware (WiFi)
+<p align="center">Tes hardware (WiFi)</p>
 
-![](https://miro.medium.com/max/700/1*iV20Fwh5PnDk0YykWLqnmw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic20.png" title="" alt="" data-align="center"/>
 
-Tes hardware (Bluetooth)
+<p align="center">Tes hardware (Bluetooth)</p>
 
-![](https://miro.medium.com/max/700/1*sfz0a9YVPKlfk9bbPcrjgA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic21.png" title="" alt="" data-align="center"/>
 
-Tes hardware (Touchpad)
+<p align="center">Tes hardware (Touchpad)</p>
 
 17. Hubungkan komputer ke internet, instalasi Ubuntu dengan komputer yang terhubung ke internet akan memudahkan *post-install* karena instalasi akan memasang pembaruan yang dibutuhkan secara bersamaan. Serta dapat mempermudah pemasangan media codec yang dibutuhkan untuk memainkan musik dan video *mainstream* seperti MP3 dan MP4.
 
-![](https://miro.medium.com/max/700/1*URiWeAU9UmbBIAJNtkpXbw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic22.png" title="" alt="" data-align="center"/>
 
 18. Ketika sudah dilakukan pengetesan, klik icon “Install Ubuntu” di atas Firefox untuk memulai instalasi.
 
 19. Pilih bahasa yang ingin digunakan ketika *installer* terbuka.
 
-![](https://miro.medium.com/max/700/1*FnRQHAhfqUB5thoKoueTIQ.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic23.png" title="" alt="" data-align="center"/>
 
-Aplikasi Installer Ubiquity
+<p align="center">Aplikasi Installer Ubiquity</p>
 
 20. Pilih *keyboard layout* yang diinginkan, kemungkinan besar *keyboard* yang dipakai adalah English US, sehingga kita dapat meninggalkan pemilihan ini sebagai *default*. Tes keyboard pada kotak pengetesan.
 
-![](https://miro.medium.com/max/700/1*JyzjoT_tW4I5h0NBzbDARw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic24.png" title="" alt="" data-align="center"/>
 
-Tes layout keyboard
+<p align="center">Tes layout keyboard</p>
 
 21. Pilih instalasi normal, dan centang semua opsi di *other options*. Kedua opsi tersebut memperlukan koneksi internet aktif.
 
-![](https://miro.medium.com/max/700/1*2Y_xAIqDJ3CeEhxqCDP8Jg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic25.png" title="" alt="" data-align="center"/>
 
-Opsi instalasi
+<p align="center">Opsi instalasi</p>
 
 22. Pilih “Something else” pada tipe instalasi yang akan dilakukan, klik Continue.
 
-![](https://miro.medium.com/max/700/1*441yp9ZhDIFYlxzjDqSzsw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic26.png" title="" alt="" data-align="center"/>
 
-Tipe Instalasi
+<p align="center">Tipe Instalasi</p>
 
 23. Pilih wilayah “free space” dari hasil pemotongan penyimpanan yang kita lakukan sebelumya. Lalu klik “+”.
 
-![](https://miro.medium.com/max/700/1*aw8XvnaMoZa7csmKCBrGcw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic27.png" title="" alt="" data-align="center"/>
 
 24. Buat partisi dengan ukuran sama seperti ukuran RAM komputer. Kita akan menggunakan partisi/volume tersebut sebagai *swap area*.
 
-![](https://miro.medium.com/max/473/1*rvkwq7NdVx95VMV7GzapZg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic28.png" title="" alt="" data-align="center"/>
 
-Swap Partition
+<p align="center">Swap Partition</p>
 
 25. Khusus untuk komputer yang menggunakan UEFI (pengecekan dapat dilakukan dengan [cara ini](https://itsfoss.com/check-uefi-or-bios/), buat partisi sebesar 500MB sebagai FAT32 *file system*, dengan *mount point* “/boot/efi”.
 
-![](https://miro.medium.com/max/473/1*2r3vz_LcOZWRyRUz1wQhZg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic29.png" title="" alt="" data-align="center"/>
 
-/boot/efi partition
+<p align="center">/boot/efi partition</p>
 
 26. Buat partisi untuk instalasi ubuntu dengan sisa penyimpanan yang ada. Gunakan partisi sebagai btrfs, dengan *mount point* “/” (root).
 
-![](https://miro.medium.com/max/473/1*93ry6BtbJ5h2q_wSH33Dyg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic30.png" title="" alt="" data-align="center"/>
 
-root (Local Disk:C) partition
+<p align="center">root (Local Disk:C) partition</p>
 
 27. Berikut hasil dari partisi yang telah kita buat. Ketika sudah yakin dengan partisi yang dibuat, klik “Install Now”.
 
-![](https://miro.medium.com/max/700/1*6c3yDg4Jj0otk83QLkfxjQ.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic31.png" title="" alt="" data-align="center"/>
 
-Partition map untuk UEFI
+<p align="center">Partition map untuk UEFI</p>
 
-![](https://miro.medium.com/max/700/1*ywY1gTgZAeME2W2y4ffqPA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic32.png" title="" alt="" data-align="center"/>
 
-Partition map untuk Legacy/BIOS
+<p align="center">Partition map untuk Legacy/BIOS</p>
 
 28. Pilih zona waktu dari daerah tempat tinggal.
 
-![](https://miro.medium.com/max/700/1*7Tt3XaGwgA35-2FxGWwvYA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic33.png" title="" alt="" data-align="center"/>
 
-Zona waktu
+<p align="center">Zona waktu</p>
 
 29. Masukkan data untuk akun komputer kita.
 
-![](https://miro.medium.com/max/700/1*ercPXIHRq29-6BNKitic5Q.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic34.png" title="" alt="" data-align="center"/>
 
-Pembuatan akun offline komputer
+<p align="center">Pembuatan akun offline komputer</p>
 
 30. Tunggu instalasi hingga selesai.
 
-![](https://miro.medium.com/max/700/1*Ytp8j8vzhSX2Z9MKZWzYLA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic35.png" title="" alt="" data-align="center"/>
 
-Proses Instalasi
+<p align="center">Proses Instalasi</p>
 
 31. Ketika instalasi selesai, akan keluar *prompt* untuk *restart* komputer, atau dapat dilakukan *restart* melalui menu berikut.
 
-![](https://miro.medium.com/max/341/1*0W6HbvHjA11_lPtDCs04vA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic36.png" title="" alt="" data-align="center"/>
 
-Gnome 40 System Menu
+<p align="center">Gnome 40 System Menu</p>
 
 32. Cabut *flashdisk*, lalu tekan *enter*.
 
-![](https://miro.medium.com/max/642/1*KV29AaRWH_M78jRi9QjYnA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic37.png" title="" alt="" data-align="center"/>
 
 33. Kita telah masuk ke Menu GRUB Ubuntu. Dapat dilihat kita dapat memilih Windows 10 dan Ubuntu. Pilih Ubuntu.
 
-![](https://miro.medium.com/max/642/1*7Q2PsBaeOxnxht4jfKOKBw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic38.png" title="" alt="" data-align="center"/>
 
 34. Setelah Login pertama kali, kita akan ditemui oleh halaman akun *online*, akun ini digunakan untuk beberapa fungsi seperti *email client*, Google drive dari Files, Kontak, Kalender dan Event.
 
-![](https://miro.medium.com/max/700/1*3HLf5sLu_sT82xy1qq8mHQ.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic39.png" title="" alt="" data-align="center"/>
 
-Integrasi akun online
+<p align="center">Integrasi akun online</p>
 
 35. Isi dan sesuaikan opsi yang ada sesuai dengan keinginan.
 
-![](https://miro.medium.com/max/700/1*uiwGh4em5Yoc1EkMlnbB4w.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic40.png" title="" alt="" data-align="center"/>
 
-Satu-satunya opsi telemetri di Ubuntu (tidak seperti Windows yang memiliki puluhan)
+<p align="center">Satu-satunya opsi telemetri di Ubuntu (tidak seperti Windows yang memiliki puluhan)</p>
 
-![](https://miro.medium.com/max/700/1*S0_nYE26RuBWb9YMubW7xA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic41.png" title="" alt="" data-align="center"/>
 
-Layanan lokasi GPS untuk cuaca dan zona waktu
+<p align="center">Layanan lokasi GPS untuk cuaca dan zona waktu</p>
 
 36. Selamat! Ubuntu telah terpasang.
 
-![](https://miro.medium.com/max/700/1*5jiV-nDQHcVOIegA4qTygw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic42.png" title="" alt="" data-align="center"/>
 
 # Post Install
 
 1. Ubah tema menjadi tema Gelap melalui Settings → Appearance.
 
-![](https://miro.medium.com/max/700/1*2qmVNXccsIDE95LlHkOUFA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic43.png" title="" alt="" data-align="center"/>
 
 2. *Update* dan *upgrade* sistem melalui terminal, dengan perintah:
 
@@ -257,7 +257,7 @@ Layanan lokasi GPS untuk cuaca dan zona waktu
 
 *Copy* perintah ini dengan ctrl + c, lalu *paste* di terminal menggunakan perintah ctrl + shift + v.
 
-![](https://miro.medium.com/max/700/1*0Cl7d3QyLUszCRDWX9l0Bw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic44.png" title="" alt="" data-align="center"/>
 
 3. Pasang aplikasi dengan perintah:
 
@@ -269,25 +269,25 @@ Misal :
 
 Setelah instalasi selesai, ketik “neofetch”, klik *enter*.
 
-![](https://miro.medium.com/max/700/1*jm3zjdj1At4EOpe1mVOD9g.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic45.png" title="" alt="" data-align="center"/>
 
-Aplikasi Neofetch
+<p align="center">Aplikasi Neofetch</p>
 
 4. Pasang codec untuk Multimedia proprietary, VLC,font Microsoft seperti Times New Roman, dan aplikasi tambahan lain dengan perintah:
 
 > $ sudo apt install ubuntu-restricted-extras vlc synaptic htop build-essential figlet
 
-![](https://miro.medium.com/max/700/1*xOhS1Z8KOHaJ042KiUIVbg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic46.png" title="" alt="" data-align="center"/>
 
 Selama instalasi, kita akan dihadapi oleh EULA dari font Microsoft, klik panah kiri pada *keyboard*, dan *enter*.
 
-![](https://miro.medium.com/max/700/1*Omr6J8iYUCY_kuKL7RhBIg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic47.png" title="" alt="" data-align="center"/>
 
-EULA ttf-ms-fonts
+<p align="center">EULA ttf-ms-fonts</p>
 
 Lalu pilih “ya” dengan cara yang sama.
 
-![](https://miro.medium.com/max/700/1*msH0ELx7blWDJZKJo4Wodw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic48.png" title="" alt="" data-align="center"/>
 
 5. Buka *tab* baru pada terminal, ketikkan:
 
@@ -297,9 +297,9 @@ Lalu hapus tanda “#” pada *line* “WaylandEnable=false”. klik ctrl+x, y
 
 Langkah ini dilakukan agar Ubuntu dapat melakukan *screen sharing* pada Google Meet, Discord, dan *platform* lainnya.
 
-![](https://miro.medium.com/max/700/1*_JugVK-i_YkRSwqaTis4wg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic49.png" title="" alt="" data-align="center"/>
 
-Wayland window server
+<p align="center">Wayland window server</p>
 
 # Tambahan
 
@@ -309,41 +309,41 @@ Di dalam terminal masukkan perintah:
 
 > $ sudo add-apt-repository -y ppa:teejee2008/timeshift
 
-![](https://miro.medium.com/max/700/1*lc0fGEyaty6nXLUSmcr4XA.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic50.png" title="" alt="" data-align="center"/>
 
 *Update* repositori sistem dengan:
 
 > $ sudo apt-get update
 
-![](https://miro.medium.com/max/700/1*OPSnx-paTv2QGxw5CaINMw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic51.png" title="" alt="" data-align="center"/>
 
 Pasang Timeshft dengan:
 
 > $ sudo apt-get install timeshift
 
-![](https://miro.medium.com/max/700/1*domJeQsCWIiVDZeq3pLMBw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic52.png" title="" alt="" data-align="center"/>
 
 Setelah instalasi selesai, klik Activities, lalu cari Timeshift.
 
-![](https://miro.medium.com/max/700/1*BJsi_AqoecqIbW_iEbeyGQ.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic53.png" title="" alt="" data-align="center"/>
 
 Secara *default*, karena kita menggunakan btrfs, Timeshift akan memilih BTRFS. Klik Next.
 
-![](https://miro.medium.com/max/700/1*0TA2waEAtMxwgcjZKVuMWg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic54.png" title="" alt="" data-align="center"/>
 
 Biarkan lokasi *snapshot* menjadi *default*, klik next lagi. Pilih level *snapshot* yang diinginkan sesuai kebutuhan. *Snapshot* Timeshift tidak akan membuat *backup* dari *file* pribadi, hanya sistem saja. Dan ukuran *backup* dari BTRFS sangat kecil, sehingga tidak perlu khawatir dengan *space harddisk* kurang.
 
-![](https://miro.medium.com/max/700/1*S6fe5PSWxMZszqUWcrxD2g.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic55.png" title="" alt="" data-align="center"/>
 
 Klik Next terus hingga *setup* selesai. Kini, buatlah Snapshot pertama dari sistem.
 
-![](https://miro.medium.com/max/700/1*xVR_ECRTvmVrVeEJQA3WSw.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic56.png" title="" alt="" data-align="center"/>
 
-![](https://miro.medium.com/max/700/1*-qdB5CvlG0pTg0g2dITKXg.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic57.png" title="" alt="" data-align="center"/>
 
 Selamat! Timeshift telah berjalan di komputer. Perlu diingat bahwa Timeshift hanya akan membuat *snapshot* dari sistem, bukan *file* pribadi. Sehingga buat *backup file* pribadi secara berkala. Untuk melakukan *restore*, cukup klik “Restore”, dan *restart* komputer setelah *restore* selesai.
 
-![](https://miro.medium.com/max/700/1*vlT0KBUJKzd-xt3N4d8bsQ.png)
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/Instalasi%20Ubuntu%2021.10%20Impish%20Indri%20Dual%20Boot%20dengan%20Windows/pic58.png" title="" alt="" data-align="center"/>
 
 # Kesimpulan
 
@@ -353,5 +353,3 @@ Demikian cara memasang Ubuntu Dual Boot dengan Windows. Silahkan ajukan pertanya
 
 - balena.io, balenaEtcher, diakses pada (2021–10–16) dari https://www.balena.io/etcher/
 - ubuntu.com, Ubuntu Desktop, diakses pada (2021–10–17) dari https://ubuntu.com/download/desktop
-
-33
