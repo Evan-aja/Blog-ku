@@ -8,49 +8,49 @@ author: Gabriel Evan
 
 ### BTRFS — Waktunya Meninggalkan EXT4?
 
-<img src="/images/BTRFS - Waktunya Meninggalkan EXT4?/pic1.png" title="" alt="" data-align="center"/>
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/BTRFS%E2%80%8A-%E2%80%8AWaktunya%20Meninggalkan%20EXT4%3F/pic1.png" title="" alt="" data-align="center"/>
 
 <p align="center">Logo BTRFS</p>
 
 ### Apa itu BTRFS?
 
-BTRFS (_B-Tree FileSystem_) adalah sebuah _FileSystem_ modern berbasis _Copy on Write_ (CoW). _FileSystem_ ini pada awalnya didesain oleh Oracle sejak tahun 2007 dan diciptakan dengan tujuan memberikan implementasi fitur lanjutan dan memudahkan administrasi reparasi data. Fitur utama yang diunggulkan oleh BTRFS di antaranya adalah _Subvolume, snapshot, software based_ RAID, dan _checksum_ untuk data dan metadata untuk reparasi otomatis.
+BTRFS (*B-Tree FileSystem*) adalah sebuah *FileSystem* modern berbasis *Copy on Write* (CoW). *FileSystem* ini pada awalnya didesain oleh Oracle sejak tahun 2007 dan diciptakan dengan tujuan memberikan implementasi fitur lanjutan dan memudahkan administrasi reparasi data. Fitur utama yang diunggulkan oleh BTRFS di antaranya adalah *Subvolume, snapshot, software based* RAID, dan *checksum* untuk data dan metadata untuk reparasi otomatis.
 
 ### Apakah Fitur pada BTRFS Dapat Berguna Bagi Pengguna Akhir?
 
-Dimulai dengan _Subvolume._ Dalam sebuah partisi yang menggunakan BTRFS, dapat dibuat banyak “_Subvolume_” tempat data dapat disimpan. Kemampuan ini memyebabkan dapat dilakukan pemasangan banyak sistem operasi di dalam partisi yang sama (misal Debian pada _subvolume_ @, _Arch_ pada @2, dan _Fedora_ pada *subvolume @*3) dan nama dari _subvolume_ dapat ditentukan secara bebas oleh pengguna, dengan metode penamaan paling umum berawalan “@” untuk _root_, dan diberi nama setelah nya untuk _mount_ lain, seperti @_home_ dan @_swap_.
+Dimulai dengan *Subvolume.* Dalam sebuah partisi yang menggunakan BTRFS, dapat dibuat banyak “*Subvolume*” tempat data dapat disimpan. Kemampuan ini memyebabkan dapat dilakukan pemasangan banyak sistem operasi di dalam partisi yang sama (misal Debian pada *subvolume* @, *Arch* pada @2, dan *Fedora* pada *subvolume @*3) dan nama dari *subvolume* dapat ditentukan secara bebas oleh pengguna, dengan metode penamaan paling umum berawalan “@” untuk *root*, dan diberi nama setelah nya untuk *mount* lain, seperti @*home* dan @*swap*.
 
-<img src="/images/BTRFS - Waktunya Meninggalkan EXT4?/pic2.png" title="" alt="" data-align="center"/>
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/BTRFS%E2%80%8A-%E2%80%8AWaktunya%20Meninggalkan%20EXT4%3F/pic2.png" title="" alt="" data-align="center"/>
 
 <p align="center">*Subvolume* pada BTRFS</p>
 
-Selanjutnya, _snapshot_. BTRFS dapat membuat _snapshot_ dari sistem yang menggunakan BTRFS sebagai *FileSystem-*nya. _Snapshot_ ini akan dibuat secara instan dan berukuran sangat kecil apabila dibandingkan dengan EXT4 yang menggunakan _rsync_. Hal ini dapat terjadi, karena BTRFS merupakan _FileSystem_ yang berbasis _Copy on Write_. Sehingga data hanya akan disimpan ke dalam _snapshot_ apabila terjadi perubahan pada file yang ada pada saat _snapshot_ dibuat, _Byte_ per _Byte_. Oleh karena itu, proses pembuatan _snapshot_ akan menjadi jauh lebih cepat daripada LVM (_Logical Volume Manager_).
+Selanjutnya, *snapshot*. BTRFS dapat membuat *snapshot* dari sistem yang menggunakan BTRFS sebagai *FileSystem-*nya. *Snapshot* ini akan dibuat secara instan dan berukuran sangat kecil apabila dibandingkan dengan EXT4 yang menggunakan *rsync*. Hal ini dapat terjadi, karena BTRFS merupakan *FileSystem* yang berbasis *Copy on Write*. Sehingga data hanya akan disimpan ke dalam *snapshot* apabila terjadi perubahan pada file yang ada pada saat *snapshot* dibuat, *Byte* per *Byte*. Oleh karena itu, proses pembuatan *snapshot* akan menjadi jauh lebih cepat daripada LVM (*Logical Volume Manager*).
 
-<img src="/images/BTRFS - Waktunya Meninggalkan EXT4?/pic3.png" title="" alt="" data-align="center"/>
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/BTRFS%E2%80%8A-%E2%80%8AWaktunya%20Meninggalkan%20EXT4%3F/pic3.png" title="" alt="" data-align="center"/>
 
 <p align="center">Visualisasi Snapshot pada BTRFS</p>
 
-Misalkan, seorang pengguna membuat _snapshot_ yang di dalamnya terdapat 100 _file_, _snapshot_ tersebut hanya akan membuat [_reflink_](https://btrfs.wiki.kernel.org/index.php/Deduplication) di mana akan ada 2 _file_ yang menunjuk pada blok data yang sama di dalam sebuah volume. 2 _file_ tersebut akan terpisah hanya pada saat blok data asli terjadi perubahan, entah dari _file_ asli maupun _snapshot_, apabila terjadi perubahan sekecil apapun, maka _file_ akan terpisah dan data baru akan disimpan ke dalam blok baru. Karena _snapshot_ yang dibuat ini memiliki deduplikasi _Byte_ per _Byte_, maka _file_ yang telah disimpan dapat dikembalikan seperti semula apabila diperlukan. Restorasi data juga hanya akan memakan waktu beberapa detik saja, sebesar apapun data yang telah terpisah. Sehingga BTRFS dapat menjadi tambahan jaminan _peace of mind_ ketika akan melakukan eksperimen di dalam sistem operasi yang dapat menyebabkan kerusakan sistem.
+Misalkan, seorang pengguna membuat *snapshot* yang di dalamnya terdapat 100 *file*, *snapshot* tersebut hanya akan membuat [*reflink*](https://btrfs.wiki.kernel.org/index.php/Deduplication) di mana akan ada 2 *file* yang menunjuk pada blok data yang sama di dalam sebuah volume. 2 *file* tersebut akan terpisah hanya pada saat blok data asli terjadi perubahan, entah dari *file* asli maupun *snapshot*, apabila terjadi perubahan sekecil apapun, maka *file* akan terpisah dan data baru akan disimpan ke dalam blok baru. Karena *snapshot* yang dibuat ini memiliki deduplikasi *Byte* per *Byte*, maka *file* yang telah disimpan dapat dikembalikan seperti semula apabila diperlukan. Restorasi data juga hanya akan memakan waktu beberapa detik saja, sebesar apapun data yang telah terpisah. Sehingga BTRFS dapat menjadi tambahan jaminan *peace of mind* ketika akan melakukan eksperimen di dalam sistem operasi yang dapat menyebabkan kerusakan sistem.
 
-<img src="/images/BTRFS - Waktunya Meninggalkan EXT4?/pic4.png" title="" alt="" data-align="center"/>
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/BTRFS%E2%80%8A-%E2%80%8AWaktunya%20Meninggalkan%20EXT4%3F/pic4.png" title="" alt="" data-align="center"/>
 
 <p align="center">Cara Kerja CoW</p>
 
-Selanjutnya, _software based_ RAID, dengan adanya dukungan langsung untuk RAID 0, 1, dan 10, pengguna dapat menggunakan RAID di dalam sistemnya tanpa memerlukan kehadiran RAID _controller_ terpisah di dalam _hardware_ komputer. Namun, BTRFS masih belum mendukung RAID 5 dan 6 secara seutuhnya, sehingga masih belum dapat direkomendasikan untuk digunakan sebagai media penyimpanan data dengan reliabilitas tinggi.
+Selanjutnya, *software based* RAID, dengan adanya dukungan langsung untuk RAID 0, 1, dan 10, pengguna dapat menggunakan RAID di dalam sistemnya tanpa memerlukan kehadiran RAID *controller* terpisah di dalam *hardware* komputer. Namun, BTRFS masih belum mendukung RAID 5 dan 6 secara seutuhnya, sehingga masih belum dapat direkomendasikan untuk digunakan sebagai media penyimpanan data dengan reliabilitas tinggi.
 
-Kelebihan bonusnya, BTRFS mendukung konversi EXT dan ReiserFS menjadi BTRFS tanpa diperlukan format partisi, namun perubahan ini kurang dapat direkomendasikan, terutama pada partisi sistem. Karena, dalam memanfaatkan fitur _snapshot_ pada _root_, dibutuhkan _subvolume_ untuk penempatan _root_. Proses ini dapat dilakukan secara manual melalui live cd dan memindahkan seluruh data di dalam _root_ (selain _home_, yang kontennya harus dipindahkan ke dalam _subvolume_ @_home_) ke dalam _subvolume_ @ (atau nama lain selama mudah diingat). Dilakukan modifikasi ke dalam _fstab_ dari sistem, dengan menambahkan opsi _subvol_=_namasubvol_. Namun lebih mudah untuk melakukan _fresh install_ dari awal.
+Kelebihan bonusnya, BTRFS mendukung konversi EXT dan ReiserFS menjadi BTRFS tanpa diperlukan format partisi, namun perubahan ini kurang dapat direkomendasikan, terutama pada partisi sistem. Karena, dalam memanfaatkan fitur *snapshot* pada *root*, dibutuhkan *subvolume* untuk penempatan *root*. Proses ini dapat dilakukan secara manual melalui live cd dan memindahkan seluruh data di dalam *root* (selain *home*, yang kontennya harus dipindahkan ke dalam *subvolume* @*home*) ke dalam *subvolume* @ (atau nama lain selama mudah diingat). Dilakukan modifikasi ke dalam *fstab* dari sistem, dengan menambahkan opsi *subvol*=*namasubvol*. Namun lebih mudah untuk melakukan *fresh install* dari awal.
 
-<img src="/images/BTRFS - Waktunya Meninggalkan EXT4?/pic5.png" title="" alt="" data-align="center"/>
+<img src="https://raw.githubusercontent.com/Evan-aja/Blog-ku/main/resource/BTRFS%E2%80%8A-%E2%80%8AWaktunya%20Meninggalkan%20EXT4%3F/pic5.png" title="" alt="" data-align="center"/>
 
 <p align="center">Modifikasi Mounting Point pada fstab</p>
 
-Terakhir, reparasi otomatis. BTRFS memiliki _checksum_ untuk setiap data dan metadata dalam mendeteksi kerusakan data dan melakukan perbaikan terhadap data tersebut. Pada saat BTRFS menemukan kerusakan data, maka dilakukan pengecekan inkonsistensi _checksum_. Pada sistem yang menggunakan _mirroring_ dengan RAID 1 dan 10, BTRFS akan membaca data yang benar, dan data yang rusak akan diganti dengan data yang benar dari media penyimpanan lain. Pada sistem yang tidak menggunakan _mirroring_, maka akan dilakukan penghapusan data rusak dan dilakukan _return Error Input/Output_ (EIO).
+Terakhir, reparasi otomatis. BTRFS memiliki *checksum* untuk setiap data dan metadata dalam mendeteksi kerusakan data dan melakukan perbaikan terhadap data tersebut. Pada saat BTRFS menemukan kerusakan data, maka dilakukan pengecekan inkonsistensi *checksum*. Pada sistem yang menggunakan *mirroring* dengan RAID 1 dan 10, BTRFS akan membaca data yang benar, dan data yang rusak akan diganti dengan data yang benar dari media penyimpanan lain. Pada sistem yang tidak menggunakan *mirroring*, maka akan dilakukan penghapusan data rusak dan dilakukan *return Error Input/Output* (EIO).
 
-Dengan BTRFS _scrub_, BTRFS membaca seluruh data yang ada dan memperbaiki data yang rusak. Pengecekan ini dapat dilakukan saat sistem _online_, sehingga tidak diperlukan _downtime_ pada sistem.
+Dengan BTRFS *scrub*, BTRFS membaca seluruh data yang ada dan memperbaiki data yang rusak. Pengecekan ini dapat dilakukan saat sistem *online*, sehingga tidak diperlukan *downtime* pada sistem.
 
 ### Kesimpulan
 
-Dengan demikian, dapat dilihat bahwa fitur yang disediakan oleh BTRFS sangat berguna untuk pengguna akhir, terutama _snapshot_ dan reparasi otomatis data dengan _checksum_. Terutama dengan EXT4 yang memang dari awal hanya diciptakan sebagai “_stop-gap_” pada tahun 2008 oleh pengembang utama EXT3 dan EXT4 _FileSystem_, [Theodore Ts’o](https://en.wikipedia.org/wiki/Theodore_Ts%27o). Sudah saatnya meninggalkan EXT4 dan berpindah menggunakan BTRFS sebagai _default_. Dengan adanya peralatan seperti _Timeshift_ yang memepermudah pembuatan _snapshot_ BTRFS untuk pengguna yang masih awam dan kurang paham dengan pengoperasian terminal, serta stabilitas BTRFS yang sudah sangat baik, sudah semakin sedikit alasan untuk tetap menggunakan EXT4 sebagai _default FileSystem_ dalam sistem yang digunakan.
+Dengan demikian, dapat dilihat bahwa fitur yang disediakan oleh BTRFS sangat berguna untuk pengguna akhir, terutama *snapshot* dan reparasi otomatis data dengan *checksum*. Terutama dengan EXT4 yang memang dari awal hanya diciptakan sebagai “*stop-gap*” pada tahun 2008 oleh pengembang utama EXT3 dan EXT4 *FileSystem*, [Theodore Ts’o](https://en.wikipedia.org/wiki/Theodore_Ts%27o). Sudah saatnya meninggalkan EXT4 dan berpindah menggunakan BTRFS sebagai *default*. Dengan adanya peralatan seperti *Timeshift* yang memepermudah pembuatan *snapshot* BTRFS untuk pengguna yang masih awam dan kurang paham dengan pengoperasian terminal, serta stabilitas BTRFS yang sudah sangat baik, sudah semakin sedikit alasan untuk tetap menggunakan EXT4 sebagai *default FileSystem* dalam sistem yang digunakan.
 
 ### Referensi
 
