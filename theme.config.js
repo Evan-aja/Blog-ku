@@ -1,6 +1,15 @@
 const YEAR = new Date().getFullYear()
 
 export default {
+  readMore: 'Read More →',
+  postFooter: null,
+  darkMode: true,
+  navs: [
+    {
+      url: 'https://github.com/Evan-aja/Blog-ku',
+      name: 'GitHub 🐙'
+    }
+  ],
   footer: (
     <small style={{ display: 'block', marginTop: '8rem' }}>
       <time>{YEAR}</time> © Gabriel Evan.
