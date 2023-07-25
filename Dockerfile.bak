@@ -1,0 +1,22 @@
+# Stage 1: Build the Next.js app
+FROM node:18-slim as builder
+
+# Set working directory
+WORKDIR /app
+
+# Copy the application code
+COPY . .
+
+# Install dependencies
+RUN npm install
+
+RUN npm install @napi-rs/simple-git
+
+# Build the Next.js app
+RUN npm run build
+
+# Expose the port Next.js uses (usually 3000)
+EXPOSE 3000
+
+# Start the Next.js application
+CMD ["npm", "run", "start"]
