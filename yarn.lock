@@ -54,12 +54,7 @@
     "@napi-rs/simple-git-linux-x64-musl" "0.1.8"
     "@napi-rs/simple-git-win32-arm64-msvc" "0.1.8"
     "@napi-rs/simple-git-win32-x64-msvc" "0.1.8"
-
-<<<<<<< Updated upstream
-"@next/env@13.4.1":
-  version "13.4.1"
-  resolved "https://registry.yarnpkg.com/@next/env/-/env-13.4.1.tgz#57322da2630b6bb6d7204577b0a18f6f9324db0c"
-
+    
 "@next/swc-darwin-arm64@13.4.9":
   version "13.4.9"
   resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.4.9.tgz#0ed408d444bbc6b0a20f3506a9b4222684585677"
@@ -95,25 +90,14 @@
 "@next/swc-win32-x64-msvc@13.4.9":
   version "13.4.9"
   resolved "https://registry.yarnpkg.com/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-13.4.9.tgz#0c2758164cccd61bc5a1c6cd8284fe66173e4a2b"
-=======
 "@next/env@13.4.4":
   version "13.4.4"
   resolved "https://registry.npmjs.org/@next/env/-/env-13.4.4.tgz"
   integrity sha512-q/y7VZj/9YpgzDe64Zi6rY1xPizx80JjlU2BTevlajtaE3w1LqweH1gGgxou2N7hdFosXHjGrI4OUvtFXXhGLg==
-
-"@next/swc-linux-x64-gnu@13.4.4":
-  version "13.4.4"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-13.4.4.tgz"
-  integrity sha512-PX706XcCHr2FfkyhP2lpf+pX/tUvq6/ke7JYnnr0ykNdEMo+sb7cC/o91gnURh4sPYSiZJhsF2gbIqg9rciOHQ==
-
 "@next/swc-linux-x64-musl@13.4.4":
   version "13.4.4"
   resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-13.4.4.tgz"
   integrity sha512-TKUUx3Ftd95JlHV6XagEnqpT204Y+IsEa3awaYIjayn0MOGjgKZMZibqarK3B1FsMSPaieJf2FEAcu9z0yT5aA==
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 "@swc/helpers@0.5.1":
   version "0.5.1"
@@ -1373,22 +1357,14 @@ next-themes@^0.2.1:
   resolved "https://registry.npmjs.org/next-themes/-/next-themes-0.2.1.tgz"
   integrity sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 next@^13.4.1:
   version "13.4.1"
   resolved "https://registry.yarnpkg.com/next/-/next-13.4.1.tgz#8d23f94c81b3f9cc8b34165ad528457e5befd726"
-=======
-=======
->>>>>>> Stashed changes
+
 next@*, next@^13.4.4, next@>=9.5.3:
   version "13.4.4"
   resolved "https://registry.npmjs.org/next/-/next-13.4.4.tgz"
   integrity sha512-C5S0ysM0Ily9McL4Jb48nOQHT1BukOWI59uC3X/xCMlYIh9rJZCv7nzG92J6e1cOBqQbKovlpgvHWFmz4eKKEA==
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
   dependencies:
     "@next/env" "13.4.9"
     "@swc/helpers" "0.5.1"
