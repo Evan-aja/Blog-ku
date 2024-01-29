@@ -311,6 +311,11 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-3.0.0.tgz#988ae8af1e5239e89f9fbb1ade4c935f4eeedf9a"
   integrity sha512-MFETx3tbTjE7Uk6vvnWINA/1iJ7LuMdO4fcq8UfF0pRbj01aGLduVvQcRyswuACJdpnHgg8E3rQLhaRdNEJS0w==
 
+"@ungap/structured-clone@^1.0.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
+  integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
+
 "@vercel/analytics@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-1.1.1.tgz#2a712378a95014a548b4f9d2ae1ea0721433908d"
@@ -2006,10 +2011,10 @@ next@^14.1.0:
     "@next/swc-win32-ia32-msvc" "14.1.0"
     "@next/swc-win32-x64-msvc" "14.1.0"
 
-nextra-theme-blog@^3.0.0-alpha.11:
-  version "3.0.0-alpha.13"
-  resolved "https://registry.yarnpkg.com/nextra-theme-blog/-/nextra-theme-blog-3.0.0-alpha.13.tgz#45aa66fc182465ea62fedd89c0a3f84f6f765e3a"
-  integrity sha512-puuZUY4v8Hpgpgh5ryafGra3qqSJioeMIJMrY+4lk30IADGNcfQmeQ7w5xc0iMERi/ZNDNPVy9PATqoSCRTo2w==
+nextra-theme-blog@^3.0.0-alpha.15:
+  version "3.0.0-alpha.15"
+  resolved "https://registry.yarnpkg.com/nextra-theme-blog/-/nextra-theme-blog-3.0.0-alpha.15.tgz#89c2418f7ede7d0425c4a6be65eb0b99c3daad19"
+  integrity sha512-y8zqCssv8nVYcdXMFf8YYkRq4hJy2/PjXBUXQBWcKjcQ39JtExtoG6oP1Q6cbsz7YeWEHpucHAa3g7sjzWrL+A==
   dependencies:
     next-themes "^0.2.1"
 
