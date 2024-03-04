@@ -2004,10 +2004,10 @@ next@^14.1.0:
     "@next/swc-win32-ia32-msvc" "14.1.0"
     "@next/swc-win32-x64-msvc" "14.1.0"
 
-nextra-theme-blog@^3.0.0-alpha.11:
-  version "3.0.0-alpha.13"
-  resolved "https://registry.yarnpkg.com/nextra-theme-blog/-/nextra-theme-blog-3.0.0-alpha.13.tgz#45aa66fc182465ea62fedd89c0a3f84f6f765e3a"
-  integrity sha512-puuZUY4v8Hpgpgh5ryafGra3qqSJioeMIJMrY+4lk30IADGNcfQmeQ7w5xc0iMERi/ZNDNPVy9PATqoSCRTo2w==
+nextra-theme-blog@^3.0.0-alpha.21:
+  version "3.0.0-alpha.21"
+  resolved "https://registry.yarnpkg.com/nextra-theme-blog/-/nextra-theme-blog-3.0.0-alpha.21.tgz#1d352252fe49906b4311fbd71d49c95ef129fcae"
+  integrity sha512-42qnwmvVW0ZTqhgWjTkcBnYN18oq/4m/+4iuEF7VzI507EcQBX35N78HJe9W7tMIc/vzo1/kXZ+ehdnPLwsNJw==
   dependencies:
     next-themes "^0.2.1"
 
