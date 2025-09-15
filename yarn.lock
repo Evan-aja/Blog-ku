@@ -1976,10 +1976,15 @@ next-mdx-remote@^4.2.1:
     vfile "^5.3.0"
     vfile-matter "^3.0.1"
 
-next-themes@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.3.0.tgz#b4d2a866137a67d42564b07f3a3e720e2ff3871a"
-  integrity sha512-/QHIrsYpd6Kfk7xakK4svpDI5mmXP0gfvCoJdGpZQ2TOrQZmsW0QxjaiLn8wbIKjtm4BTSqLoix4lxYYOnLJ/w==
+next-themes@^0.4.0:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.4.6.tgz#8d7e92d03b8fea6582892a50a928c9b23502e8b6"
+  integrity sha512-pZvgD5L0IEvX5/9GWyHMf3m8BKiVQwsCMHfoFosXtXBMnaS0ZnIJ9ST4b4NqLVKDEm8QBxoNNGNaBv2JNF6XNA==
+
+next-view-transitions@^0.3.0:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/next-view-transitions/-/next-view-transitions-0.3.4.tgz#442372e1d55f25d565c063032231980784e224f0"
+  integrity sha512-SSiskenQ8JkEFGzPjvFwC5LGGoqgTxM5dxexkeugxvcXFLpWI2ZUh4IsCURD3ovW+8Ue7xXlrtrpy8b7XR7IwQ==
 
 next@^14.1.0:
   version "14.1.0"
@@ -2004,12 +2009,14 @@ next@^14.1.0:
     "@next/swc-win32-ia32-msvc" "14.1.0"
     "@next/swc-win32-x64-msvc" "14.1.0"
 
-nextra-theme-blog@^3.0.0-alpha.24:
-  version "3.0.0-alpha.24"
-  resolved "https://registry.yarnpkg.com/nextra-theme-blog/-/nextra-theme-blog-3.0.0-alpha.24.tgz#d548f40c2ef67bbe3f71162e2751e79b13195dbf"
-  integrity sha512-xjBo7b5aJ+NzSDBOztA6tdklNutyBZCmWYMvGMrkwWZmWeaj1m9BNCa7+hHiF3l3nukxQBM3Ugev3Ve+WwAnIg==
+nextra-theme-blog@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/nextra-theme-blog/-/nextra-theme-blog-4.4.0.tgz#69d755d41ba52de44bbc89841e4b22e41b2244b9"
+  integrity sha512-+Q2p3IoYbS0Kt/mV4sDJCr3a12zGvDsD+OdBH2OsYCTxBds7GzecEpbk98rLsEijXTWJ2fnnuZp8QEbfJhzocQ==
   dependencies:
-    next-themes "^0.3.0"
+    next-themes "^0.4.0"
+    next-view-transitions "^0.3.0"
+    react-compiler-runtime "^19.1.0-rc.2"
 
 nextra@^2.13.4:
   version "2.13.4"
@@ -2135,6 +2142,11 @@ pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
   integrity sha512-b/YwNhb8lk1Zz2+bXXpS/LK9OisiZZ1SNsSLxN1x2OXVEhW2Ckr/7mWE5vrC1ZTiJlD9g19jWszTmJsB+oEpFQ==
+
+react-compiler-runtime@^19.1.0-rc.2:
+  version "19.1.0-rc.3"
+  resolved "https://registry.yarnpkg.com/react-compiler-runtime/-/react-compiler-runtime-19.1.0-rc.3.tgz#b6bb74777ebbd27dcbf830de0285387c92409c32"
+  integrity sha512-Cssogys2XZu6SqxRdX2xd8cQAf57BBvFbLEBlIa77161lninbKUn/EqbecCe7W3eqDQfg3rIoOwzExzgCh7h/g==
 
 react-dom@^18.2.0:
   version "18.2.0"
