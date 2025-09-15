@@ -316,10 +316,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@vercel/analytics@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-1.2.0.tgz#d0c9983e52dd4cb86c0d975b1432ba31df5cd0a5"
-  integrity sha512-Q9hduY6+i73Is1m57Y3OlawleeYVi4cvuh/0j6IwmSndMOE4+BKkMwjnwz+7xnqfZCanipIG6+q+zHalH9X0Zg==
+"@vercel/analytics@^1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-1.3.1.tgz#e2b1deac1b5d14fa2e4fe36186ac5054c6385ae4"
+  integrity sha512-xhSlYgAuJ6Q4WQGkzYTLmXwhYl39sWjoMA3nHxfkvG+WdBT25c563a7QhwwKivEOZtPJXifYHR1m2ihoisbWyA==
   dependencies:
     server-only "^0.0.1"
 
@@ -1976,10 +1976,10 @@ next-mdx-remote@^4.2.1:
     vfile "^5.3.0"
     vfile-matter "^3.0.1"
 
-next-themes@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.2.1.tgz#0c9f128e847979daf6c67f70b38e6b6567856e45"
-  integrity sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==
+next-themes@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.3.0.tgz#b4d2a866137a67d42564b07f3a3e720e2ff3871a"
+  integrity sha512-/QHIrsYpd6Kfk7xakK4svpDI5mmXP0gfvCoJdGpZQ2TOrQZmsW0QxjaiLn8wbIKjtm4BTSqLoix4lxYYOnLJ/w==
 
 next@^14.1.0:
   version "14.1.0"
@@ -2004,17 +2004,17 @@ next@^14.1.0:
     "@next/swc-win32-ia32-msvc" "14.1.0"
     "@next/swc-win32-x64-msvc" "14.1.0"
 
-nextra-theme-blog@^3.0.0-alpha.11:
-  version "3.0.0-alpha.13"
-  resolved "https://registry.yarnpkg.com/nextra-theme-blog/-/nextra-theme-blog-3.0.0-alpha.13.tgz#45aa66fc182465ea62fedd89c0a3f84f6f765e3a"
-  integrity sha512-puuZUY4v8Hpgpgh5ryafGra3qqSJioeMIJMrY+4lk30IADGNcfQmeQ7w5xc0iMERi/ZNDNPVy9PATqoSCRTo2w==
+nextra-theme-blog@^3.0.0-alpha.24:
+  version "3.0.0-alpha.24"
+  resolved "https://registry.yarnpkg.com/nextra-theme-blog/-/nextra-theme-blog-3.0.0-alpha.24.tgz#d548f40c2ef67bbe3f71162e2751e79b13195dbf"
+  integrity sha512-xjBo7b5aJ+NzSDBOztA6tdklNutyBZCmWYMvGMrkwWZmWeaj1m9BNCa7+hHiF3l3nukxQBM3Ugev3Ve+WwAnIg==
   dependencies:
-    next-themes "^0.2.1"
+    next-themes "^0.3.0"
 
-nextra@^2.13.3:
-  version "2.13.3"
-  resolved "https://registry.yarnpkg.com/nextra/-/nextra-2.13.3.tgz#0b24d17fc5581a9b50eede8a195ea33b9aba4920"
-  integrity sha512-OBVuyQKh+oqrbVt0AosgNYnuReWuNrtJVEN7q18b/oEg2wEpuiq3UJfmIvGgOdNYc3zv3OYrzbcq7IhwtdHHEw==
+nextra@^2.13.4:
+  version "2.13.4"
+  resolved "https://registry.yarnpkg.com/nextra/-/nextra-2.13.4.tgz#49e9f558735d86292cd8578b5a69f6d926bc2a14"
+  integrity sha512-7of2rSBxuUa3+lbMmZwG9cqgftcoNOVQLTT6Rxf3EhBR9t1EI7b43dted8YoqSNaigdE3j1CoyNkX8N/ZzlEpw==
   dependencies:
     "@headlessui/react" "^1.7.17"
     "@mdx-js/mdx" "^2.3.0"
