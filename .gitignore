@@ -33,4 +33,6 @@ yarn-error.log*
 # vercel
 .vercel
 
-public/feed.xml
+
+# claude code
+CLAUDE.md
